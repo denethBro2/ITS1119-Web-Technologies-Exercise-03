@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    padding: 15px;
+    width: 100%;
+    height: 60px;
+    text-align: left;
+}
+
+.header p {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.one {
+    background-color: #e32604;
+}
+
+.two {
+    background-color: #0761aa;
+}
+
+.three {
+    background-color: #262222;
+}
+
+.four {
+    background-color: #6a0505;
+}
+
+.onecContent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+}
+
+.twocContent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(100, 157, 233);
+
+}
+
+.ThreeContent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(107, 103, 103);
+
+}
+
+.FourContent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(248, 33, 33);
+
+}
+
+.text {
+    position: absolute;
+    top: calc(50% - 60px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 100px;
+}
