@@ -36,18 +36,18 @@ body {
     border: 15px solid red;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    background-color: white;
-    height: 250vh;
-}
-
 .circle {
     position: absolute;
     height: 140px;
     width: 140px;
     border-radius: 50%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    height: 250vh;
 }
 
 

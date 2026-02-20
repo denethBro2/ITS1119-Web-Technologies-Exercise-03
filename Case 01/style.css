@@ -1,87 +1,89 @@
 * {
-    margin: 0;
-    border: 0;
+    margin: 0.0;
+    border: 1;
     box-sizing: border-box;
 }
 
-html, .container {
+html,
+.container {
     position: relative;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
 }
 
 .box {
     position: absolute;
-    width: 50%;
     height: 50%;
+    width: 50%;
 }
 
 .red {
-    background: red;
-    top: 0;
     left: 0;
+    top: 0;
+    background: red;
 }
 
 .green {
-    background: green;
-    top: 0;
     right: 0;
-}
-
-.orange {
-    background: orange;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    background: rgb(2, 128, 2);    
 }
 
 .pink {
-    background: rgb(249, 92, 144);
-    bottom: 0;
     right: 0;
+    bottom: 0;
+    background: rgb(246, 107, 153);
+}
+
+.orange {
+    left: 0;
+    bottom: 0;
+    background: rgb(255, 168, 7);
+ 
 }
 
 .box::before {
     content: "";
     position: absolute;
-    width: 200px;
     height: 200px;
-    background-color: white;
+    width: 200px;
     border-radius: 50%;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
+    background-color: white;
 }
 
 .box::after {
     content: "";
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    top: 50%;
     left: 50%;
+    height: 100px;
+    width: 100px;
+    top: 50%;
     transform: translate(-50%, -50%);
+    background-color: red;
 }
 
 .center-box {
     position: absolute;
-    width: 200px;
     height: 200px;
-    background-color: white;
-    top: 50%;
+    width: 200px;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
+    background-color: white;
 }
 
 .center-circle {
     position: absolute;
-    width: 100px;
     height: 100px;
-    background-color: red;
-    border-radius: 50%;
+    width: 100px;
     top: 50%;
+    border-radius: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: red;
 }
 
 .center-half-circle-up {
@@ -91,31 +93,41 @@ html, .container {
     background-color: white;
     border-bottom-left-radius: 200px;
     border-bottom-right-radius: 200px;
-    top: 0;
+    top: 0.0;
     left: 50%;
     transform: translate(-50%);
 }
 
 .center-half-circle-down {
     position: absolute;
-    width: 150px;
     height: 75px;
-    background-color: white;
-    border-top-left-radius: 200px;
+    width: 150px;
     border-top-right-radius: 200px;
-    bottom: 0;
-    left: 50%;
+    border-top-left-radius: 200px;
+    background-color: white;
     transform: translate(-50%);
+    bottom: 0.0;
+    left: 50%;
 }
 
 .left-half-circle-up {
     position: absolute;
-    width: 100px;
     height: 100px;
-    background-color: white;
+    width: 100px;
     border-bottom-right-radius: 150px;
+    background-color: white;
     top: 0;
     left: 0;
+}
+
+.left-half-circle-down {
+    position: absolute;
+    border-top-right-radius: 150px;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
 }
 
 .right-half-circle-up {
@@ -128,22 +140,13 @@ html, .container {
     right: 0;
 }
 
-.left-half-circle-down {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border-top-right-radius: 150px;
-    bottom: 0;
-    left: 0;
-}
 
 .right-half-circle-down {
     position: absolute;
-    width: 100px;
     height: 100px;
-    background-color: white;
-    border-top-left-radius: 150px;
+    width: 100px;
     bottom: 0;
     right: 0;
+    border-top-left-radius: 150px;
+    background-color: white;
 }
